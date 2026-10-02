@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="800" viewBox="0 0 1200 800">
+<defs><linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#F3E7EE"/><stop offset="1" stop-color="#EEE8FA"/></linearGradient><filter id="shadow" x="-30%" y="-30%" width="160%" height="160%"><feDropShadow dx="0" dy="20" stdDeviation="22" flood-color="#4B3860" flood-opacity=".13"/></filter></defs>
+<rect width="1200" height="800" rx="44" fill="url(#bg)"/>
+
+<g filter="url(#shadow)"><rect x="120" y="175" width="340" height="440" rx="34" fill="#FFF"/><rect x="520" y="205" width="520" height="330" rx="28" fill="#FFF"/></g>
+<rect x="155" y="225" width="270" height="45" rx="12" fill="#EEE7F7"/><circle cx="190" cy="247" r="12" fill="#8B6BAE"/><rect x="215" y="240" width="150" height="10" rx="5" fill="#C9B9D5"/>
+<rect x="155" y="300" width="270" height="170" rx="20" fill="#F5EFF8"/><path d="M190 430l50-55 45 28 55-76 55 40" fill="none" stroke="#8B6BAE" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/><circle cx="580" cy="255" r="14" fill="#DFA9C6"/><rect x="615" y="244" width="130" height="14" rx="7" fill="#7D639B"/><g fill="#D7C8E1"><rect x="580" y="315" width="65" height="150" rx="10"/><rect x="665" y="350" width="65" height="115" rx="10"/><rect x="750" y="290" width="65" height="175" rx="10"/><rect x="835" y="330" width="65" height="135" rx="10"/></g><rect x="940" y="260" width="65" height="205" rx="10" fill="#C991AE"/>
+<rect x="820" y="570" width="220" height="80" rx="18" fill="#FFF" filter="url(#shadow)"/><text x="850" y="605" font-family="Arial" font-size="18" font-weight="700" fill="#5E486F">AL RAJHI</text><text x="850" y="628" font-family="Arial" font-size="12" fill="#8C7898">Supporting Services</text>
+<text x="72" y="86" font-family="Arial,sans-serif" font-size="24" font-weight="700" letter-spacing="4" fill="#6E538D">MADAR · UX ANALYSIS</text>
+<circle cx="1080" cy="82" r="16" fill="#DCA8C3"/><circle cx="1120" cy="82" r="8" fill="#8D6CAF"/>
+</svg>

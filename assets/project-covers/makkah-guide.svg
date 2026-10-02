@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="800" viewBox="0 0 1200 800">
+<defs><linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#EAE5F7"/><stop offset="1" stop-color="#F1E2E5"/></linearGradient><filter id="shadow" x="-30%" y="-30%" width="160%" height="160%"><feDropShadow dx="0" dy="20" stdDeviation="22" flood-color="#4B3860" flood-opacity=".13"/></filter></defs>
+<rect width="1200" height="800" rx="44" fill="url(#bg)"/>
+
+<rect width="1200" height="800" rx="44" fill="url(#bg)"/>
+<path d="M0 590 Q300 500 600 590 T1200 590 V800 H0Z" fill="#DCC9BF" opacity=".7"/>
+<g filter="url(#shadow)"><rect x="115" y="210" width="310" height="400" rx="32" fill="#FFF"/><rect x="560" y="190" width="490" height="330" rx="30" fill="#FFF"/></g>
+<rect x="155" y="255" width="230" height="210" rx="20" fill="#EEE7F7"/><rect x="205" y="315" width="125" height="115" fill="#2F2934"/><rect x="205" y="345" width="125" height="14" fill="#C7A76B"/><circle cx="285" cy="520" r="20" fill="#DDA9C3"/><path d="M285 470v-30" stroke="#8B6BAE" stroke-width="8" stroke-linecap="round"/>
+<path d="M625 420 C690 300 760 360 825 260 S930 220 1000 300" fill="none" stroke="#8B6BAE" stroke-width="9" stroke-dasharray="16 14"/><circle cx="625" cy="420" r="15" fill="#DFA9C6"/><circle cx="825" cy="260" r="15" fill="#DFA9C6"/><circle cx="1000" cy="300" r="15" fill="#DFA9C6"/>
+<g fill="#FFF"><path d="M640 430v-90h65v90z"/><path d="M725 430v-125h65v125z"/><path d="M810 430v-100h65v100z"/><path d="M895 430v-140h65v140z"/></g><g fill="#8B6BAE"><path d="M655 340h35v90h-35z"/><path d="M740 305h35v125h-35z"/><path d="M825 330h35v100h-35z"/><path d="M910 290h35v140h-35z"/></g>
+<rect x="650" y="555" width="330" height="90" rx="20" fill="#FFF" filter="url(#shadow)"/><text x="685" y="592" font-family="Arial" font-size="22" font-weight="800" fill="#6E538D">MAKKAH</text><text x="685" y="622" font-family="Arial" font-size="16" fill="#9A879F">→ MADINAH · PILGRIM GUIDE</text>
+<text x="72" y="86" font-family="Arial,sans-serif" font-size="24" font-weight="700" letter-spacing="4" fill="#6E538D">PILGRIM CITY GUIDE</text>
+<circle cx="1080" cy="82" r="16" fill="#DCA8C3"/><circle cx="1120" cy="82" r="8" fill="#8D6CAF"/>
+</svg>

@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="800" viewBox="0 0 1200 800">
+<defs>
+  <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#EEE8FA"/><stop offset="1" stop-color="#F6E3EC"/></linearGradient>
+  <linearGradient id="screen" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#8B6BAE"/><stop offset="1" stop-color="#B78CC4"/></linearGradient>
+</defs>
+<rect width="1200" height="800" rx="44" fill="url(#bg)"/>
+<text x="72" y="86" font-family="Arial,sans-serif" font-size="24" font-weight="700" letter-spacing="4" fill="#6E538D">SMARTWATCH</text>
+<circle cx="1080" cy="82" r="16" fill="#DCA8C3"/><circle cx="1120" cy="82" r="8" fill="#8D6CAF"/>
+<!-- soft watch band -->
+<rect x="475" y="65" width="250" height="175" rx="72" fill="#A78ABD"/>
+<rect x="475" y="560" width="250" height="175" rx="72" fill="#A78ABD"/>
+<!-- watch body -->
+<rect x="360" y="185" width="480" height="430" rx="112" fill="#3E3548"/>
+<rect x="380" y="205" width="440" height="390" rx="96" fill="#FFFFFF"/>
+<rect x="415" y="240" width="370" height="320" rx="76" fill="#F3EDF7"/>
+<!-- health screen -->
+<circle cx="600" cy="325" r="52" fill="#E7C1D6"/>
+<path d="M600 295v60M570 325h60" stroke="#8B6BAE" stroke-width="11" stroke-linecap="round"/>
+<text x="600" y="425" text-anchor="middle" font-family="Arial,sans-serif" font-size="34" font-weight="700" fill="#5D4A72">08:30</text>
+<rect x="510" y="455" width="180" height="13" rx="6" fill="#A78ABD"/>
+<rect x="545" y="482" width="110" height="10" rx="5" fill="#CFC3D8"/>
+<circle cx="510" cy="520" r="9" fill="#DCA8C3"/><circle cx="545" cy="520" r="9" fill="#A78ABD"/><circle cx="580" cy="520" r="9" fill="#DCA8C3"/>
+</svg>

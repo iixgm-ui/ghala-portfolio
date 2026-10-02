@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="800" viewBox="0 0 1200 800">
+<defs><linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#EEE8FA"/><stop offset="1" stop-color="#F5E3EC"/></linearGradient><filter id="shadow" x="-30%" y="-30%" width="160%" height="160%"><feDropShadow dx="0" dy="20" stdDeviation="22" flood-color="#4B3860" flood-opacity=".13"/></filter></defs>
+<rect width="1200" height="800" rx="44" fill="url(#bg)"/>
+<g filter="url(#shadow)"><rect x="400" y="115" width="400" height="575" rx="54" fill="#FFF"/><rect x="435" y="190" width="330" height="230" rx="28" fill="#F3EAF7"/><circle cx="600" cy="245" r="35" fill="#DFA9C6"/><rect x="500" y="305" width="200" height="18" rx="9" fill="#8B6BAE"/><rect x="525" y="340" width="150" height="13" rx="6" fill="#CFC3D8"/><rect x="435" y="455" width="150" height="80" rx="20" fill="#EEE7F7"/><rect x="615" y="455" width="150" height="80" rx="20" fill="#F5E3EC"/></g>
+<text x="72" y="86" font-family="Arial,sans-serif" font-size="24" font-weight="700" letter-spacing="4" fill="#6E538D">MOBILE WIDGET</text>
+<circle cx="1080" cy="82" r="16" fill="#DCA8C3"/><circle cx="1120" cy="82" r="8" fill="#8D6CAF"/>
+</svg>
