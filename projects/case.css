@@ -65,3 +65,47 @@ body.dark-mode .case-hero{background:#211b25;border-color:#3d3544;box-shadow:0 1
   .mock-kiosk{height:252px;width:192px}
   .mock-kiosk-screen{height:202px}
 }
+
+/* Sehatna device mockups — physical-device presentation using the supplied composite screens */
+.sehatna-preview.device-stage{background:linear-gradient(135deg,#f0ebf9 0%,#f9e9f1 100%)!important;display:flex!important;align-items:center;justify-content:center;overflow:hidden;position:relative}
+.sehatna-preview.device-stage:before{content:"";position:absolute;width:210px;height:210px;border-radius:50%;background:rgba(134,109,208,.10);filter:blur(3px);right:-55px;top:-65px}
+.sehatna-preview.device-stage:after{content:"";position:absolute;width:150px;height:150px;border-radius:50%;background:rgba(245,225,234,.75);left:-55px;bottom:-60px}
+.sehatna-preview .mock-device{position:relative;z-index:2;transition:transform .45s cubic-bezier(.2,.75,.25,1),filter .45s ease}
+.sehatna-mockup-card:hover .mock-device{transform:translateY(-7px) rotate(var(--device-tilt,0deg)) scale(1.025);filter:drop-shadow(0 20px 25px rgba(45,32,60,.16))}
+.mock-laptop{width:min(92%,490px);height:215px;position:relative;--device-tilt:-1deg}
+.mock-laptop-screen{height:182px;border-radius:15px 15px 9px 9px;background:#18161d;border:8px solid #242128;box-shadow:inset 0 0 0 1px #5a5361,0 17px 30px rgba(45,32,60,.12);overflow:hidden;position:relative}
+.mock-laptop-screen img{display:block;width:100%;height:100%;object-fit:cover;object-position:center;background:#fff}
+.mock-laptop-base{width:108%;height:22px;position:absolute;left:-4%;bottom:4px;background:linear-gradient(#dedbe2,#aaa6af);clip-path:polygon(4% 0,96% 0,100% 56%,87% 100%,13% 100%,0 56%);border-radius:3px;box-shadow:0 8px 12px rgba(40,30,50,.10)}
+.mock-laptop-base:before{content:"";position:absolute;left:40%;right:40%;top:4px;height:4px;border-radius:6px;background:#8f8994}
+.mock-kiosk{width:212px;height:280px;display:flex;align-items:center;justify-content:center;--device-tilt:1deg}
+.mock-kiosk img{display:block;max-width:100%;max-height:100%;width:auto;height:100%;object-fit:contain;filter:drop-shadow(0 18px 24px rgba(45,32,60,.18))}
+.mock-phone-image,.mock-watch-image{height:275px;display:flex;align-items:center;justify-content:center}
+.mock-phone-image img{height:100%;max-width:95%;width:auto;object-fit:contain;filter:drop-shadow(0 18px 24px rgba(45,32,60,.16))}
+.mock-watch-image img{height:94%;max-width:92%;width:auto;object-fit:contain;filter:drop-shadow(0 18px 24px rgba(45,32,60,.17))}
+.phone-stage .mock-device{--device-tilt:-1.5deg}.watch-stage .mock-device{--device-tilt:2deg}.kiosk-stage .mock-device{--device-tilt:1.5deg}
+@media(max-width:800px){.mock-laptop{width:94%;height:195px}.mock-laptop-screen{height:162px}.mock-kiosk{width:190px;height:250px}.mock-phone-image,.mock-watch-image{height:250px}}
+@media(max-width:560px){.mock-laptop{height:205px}.mock-laptop-screen{height:171px}.mock-kiosk{width:182px;height:245px}.mock-phone-image,.mock-watch-image{height:265px}}
+
+/* Sehatna — use the supplied finished mockup images as-is. Covers remain unchanged. */
+.sehatna-gallery .clean-device-stage{
+  padding:0!important;
+  aspect-ratio:16/9;
+  height:auto!important;
+  min-height:0!important;
+  background:#f6e7ef!important;
+  overflow:hidden!important;
+  border-radius:18px 18px 0 0;
+}
+.sehatna-gallery .clean-device-stage:before,.sehatna-gallery .clean-device-stage:after{display:none!important;}
+.sehatna-device-image{
+  display:block;
+  width:100%;
+  height:100%;
+  object-fit:cover;
+  object-position:center;
+  transition:transform .35s ease,filter .35s ease;
+}
+.sehatna-mockup-card:hover .sehatna-device-image{transform:scale(1.018);filter:saturate(1.02);}
+@media(max-width:560px){
+  .sehatna-gallery .clean-device-stage{aspect-ratio:16/9;}
+}
