@@ -205,3 +205,56 @@ body.dark-mode .about{background:#1d1a20!important}
   .nav-controls button#theme{width:34px;height:34px}
   .nav-controls #lang{padding:6px 10px}
 }
+
+
+/* Interactive project showcase covers — original uploaded PNGs are displayed intact. */
+.project-showcase { perspective: 1100px; transform-style: preserve-3d; }
+.project-showcase .project-cover-frame { position: relative; overflow: hidden; }
+.project-showcase .project-cover-frame img,
+.project-showcase > .image-visual img,
+.project-showcase > .art img,
+.case-hero.project-showcase .case-hero-image {
+  object-fit: contain !important;
+  object-position: center !important;
+  transform: translateZ(0) scale(1);
+  transition: transform .45s cubic-bezier(.2,.75,.25,1), filter .35s ease;
+}
+.project-showcase .project-cover-frame:after,
+.case-hero.project-showcase:after {
+  content:"";
+  position:absolute;
+  inset:0;
+  pointer-events:none;
+  background: linear-gradient(115deg, rgba(255,255,255,0) 0%, rgba(255,255,255,.16) 45%, rgba(255,255,255,0) 65%);
+  transform: translateX(-120%);
+  transition: transform .8s cubic-bezier(.2,.65,.2,1);
+}
+.project-showcase:hover .project-cover-frame:after,
+.project-showcase:hover.case-hero:after { transform: translateX(120%); }
+.project-showcase:hover .project-cover-frame img,
+.project-showcase:hover .image-visual img,
+.project-showcase:hover .art img,
+.case-hero.project-showcase:hover .case-hero-image { transform: translateZ(12px) scale(1.012); filter: saturate(1.015) contrast(1.01); }
+.project-showcase:focus-visible { outline: 2px solid var(--purple); outline-offset: 5px; }
+
+/* Use the user-supplied showcase as the complete visual; never crop it. */
+.project-showcase .project-cover-frame,
+.featured .feature-visual.project-cover-frame,
+.card .art.project-cover-frame { background: #f8f6fb !important; }
+.project-showcase .project-cover-frame img,
+.card .art.project-cover-frame img,
+.featured .feature-visual.project-cover-frame img { width:100%; height:100%; }
+.case-hero.project-showcase { background:#f8f6fb; border-radius:32px; overflow:hidden; border:1px solid var(--line); box-shadow:0 22px 60px rgba(55,39,73,.10); }
+.case-hero.project-showcase .case-hero-image { width:100%; height:auto; display:block; }
+
+@media (max-width:650px){
+  .project-showcase:hover .project-cover-frame img,
+  .project-showcase:hover .image-visual img,
+  .project-showcase:hover .art img,
+  .case-hero.project-showcase:hover .case-hero-image { transform:none; filter:none; }
+  .project-showcase .project-cover-frame:after,
+  .case-hero.project-showcase:after { display:none; }
+}
+@media (prefers-reduced-motion: reduce){
+  .project-showcase, .project-showcase * { transition:none !important; }
+}
