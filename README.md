@@ -14,6 +14,6 @@ The AR/EN switch translates the visible portfolio content across the main page a
 The Sehatna case study includes six prepared screenshot slots linked to the live interfaces. Replace each `Screenshot placeholder` block with the supplied interface image files when they are available.
 
 ## Contact
-- Email: lgir1056@gmail.com
+- Email: ghalaahmed04@outlook.com
 - Phone: 054 541 2645
 - LinkedIn: https://www.linkedin.com/in/ghala-ahmed-663011274

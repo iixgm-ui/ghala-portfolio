@@ -48,3 +48,20 @@ const navObs=new IntersectionObserver(entries=>entries.forEach(entry=>{
  if(entry.isIntersecting){navAnchors.forEach(a=>a.classList.toggle('active',a.getAttribute('href')==='#'+entry.target.id));}
 }),{rootMargin:'-35% 0px -55% 0px',threshold:0});
 sections.forEach(s=>navObs.observe(s));
+
+// Subtle 3D interaction for Sehatna device mockups.
+if(matchMedia('(pointer:fine)').matches){
+ document.querySelectorAll('.sehatna-mockup-card').forEach(card=>{
+  card.addEventListener('pointermove',e=>{
+   const r=card.getBoundingClientRect();
+   const x=(e.clientX-r.left)/r.width-.5;
+   const y=(e.clientY-r.top)/r.height-.5;
+   card.style.setProperty('--rx',`${(-y*2.2).toFixed(2)}deg`);
+   card.style.setProperty('--ry',`${(x*2.8).toFixed(2)}deg`);
+  });
+  card.addEventListener('pointerleave',()=>{
+   card.style.setProperty('--rx','0deg');
+   card.style.setProperty('--ry','0deg');
+  });
+ });
+}
