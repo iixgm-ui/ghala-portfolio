@@ -4,24 +4,93 @@ body.dark-mode{--ink:#f7f3fa;--muted:#b8b0bf;--line:#3d3544;--bg:#17131b;--surfa
 @media(max-width:800px){.case{padding-top:50px}.case-hero{min-height:260px;padding:24px;gap:14px}.case-hero .visual{width:170px;height:240px}.case-section{grid-template-columns:1fr;gap:9px;margin-bottom:42px}.case-section>div{font-size:15px}.gallery{grid-template-columns:1fr 1fr}.meta2{gap:16px}}
 @media(max-width:560px){.case h1{font-size:42px}.intro{font-size:16px}.case-hero{min-height:230px}.case-hero .visual{width:135px;height:195px;border-width:5px}.gallery{grid-template-columns:1fr}.gallery-card .slot{height:210px}.meta2{grid-template-columns:1fr}.case-section{gap:6px}}
 
-/* Sehatna project visuals — image-like CSS mockups, matching the project-card style */
-.gallery-card .slot.sehatna-preview{display:flex;align-items:center;justify-content:center;background:linear-gradient(135deg,#eee8fa,#f5e1eb);}
-.sehatna-preview:after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(255,255,255,.08),rgba(42,28,52,.08));pointer-events:none;}
-.mini-browser{width:78%;height:72%;background:#fff;border:5px solid #332c39;border-radius:12px;overflow:hidden;box-shadow:0 16px 30px rgba(61,43,86,.16);position:relative;z-index:1}.mini-top{height:18px;background:#f2edf6;display:flex;align-items:center;gap:4px;padding:0 7px}.mini-top span{width:5px;height:5px;border-radius:50%;background:#b8a9c4}.mini-body{padding:12px}.mini-nav{width:42%;height:6px;border-radius:4px;background:#b89bd4;margin-bottom:10px}.mini-hero{height:45px;border-radius:8px;background:linear-gradient(135deg,#d9c7ee,#f4cfdc);margin-bottom:8px}.mini-cards{display:grid;grid-template-columns:repeat(3,1fr);gap:5px}.mini-cards i{height:32px;border-radius:6px;background:#f0ebf8;border:1px solid #e5dceb}
-.mini-kiosk{width:48%;height:88%;position:relative;z-index:1}.kiosk-head{height:78%;background:#fff;border:5px solid #332c39;border-radius:15px 15px 9px 9px;padding:8px;box-shadow:0 16px 30px rgba(61,43,86,.16)}.kiosk-screen{height:100%;border-radius:7px;background:#f7f3fa;padding:10px}.kiosk-screen b{display:block;width:55%;height:10px;background:#a98bc7;border-radius:4px;margin-bottom:10px}.kiosk-screen i{display:block;height:16px;border-radius:5px;background:#fff;border:1px solid #e5dceb;margin:5px 0}.kiosk-base{width:72%;height:22%;margin:-1px auto 0;background:#ddd3e3;border-radius:0 0 10px 10px;border:4px solid #332c39;border-top:0}
-.phone-preview{background:linear-gradient(135deg,#eee8fa,#eadcf0)!important}.mini-phone{width:34%;height:88%;background:#fff;border:5px solid #332c39;border-radius:22px;position:relative;z-index:1;padding:17px 8px 10px;box-shadow:0 16px 30px rgba(61,43,86,.16);overflow:hidden}.phone-notch{position:absolute;top:6px;left:50%;transform:translateX(-50%);width:32%;height:5px;border-radius:5px;background:#332c39}.widget-box{height:52%;border-radius:10px;background:linear-gradient(135deg,#e0d1f1,#f4d6e1);padding:9px;margin-bottom:8px}.widget-box b{display:block;width:45%;height:7px;border-radius:4px;background:#8c6caf;margin-bottom:8px}.widget-box span{display:block;height:6px;border-radius:4px;background:rgba(255,255,255,.8);margin:5px 0}.phone-row{display:grid;grid-template-columns:repeat(3,1fr);gap:5px}.phone-row i{height:24px;border-radius:6px;background:#f0ebf8}
-.android-phone{border-radius:20px;background:#fbfafc}.android-status{height:6px;width:42%;background:#c7b8d2;border-radius:4px;margin:0 auto 10px}.android-widget{height:56%;border-radius:10px;background:#eee6f5;padding:9px;border:1px solid #ddd1e7}.android-widget b{display:block;width:50%;height:7px;background:#9476b8;border-radius:4px;margin-bottom:8px}.android-widget i{display:block;height:7px;background:#fff;border-radius:4px;margin:6px 0}.android-dots{display:flex;gap:4px;justify-content:center;margin-top:10px}.android-dots span{width:5px;height:5px;border-radius:50%;background:#b6a2c5}
-.watch-preview{background:linear-gradient(135deg,#eee8fa,#f5e1eb)!important}.mini-watch{width:34%;height:92%;position:relative;z-index:1;display:flex;flex-direction:column;align-items:center;justify-content:center}.watch-band{width:48%;height:28%;background:#c7b4d6;border:4px solid #332c39}.watch-band.top{border-radius:12px 12px 0 0}.watch-band.bottom{border-radius:0 0 12px 12px}.watch-face{width:100%;aspect-ratio:1;background:#22202a;border:6px solid #332c39;border-radius:32%;box-shadow:0 16px 30px rgba(61,43,86,.2);position:relative;padding:13px;color:#fff;text-align:center;z-index:2}.watch-face b{display:block;font-size:16px;color:#d8b7e7}.watch-face span{display:block;width:60%;height:6px;border-radius:4px;background:#9e86bd;margin:9px auto 6px}.watch-face i{display:block;width:45%;height:5px;border-radius:4px;background:#f1c9d9;margin:0 auto}.watch-face small{display:block;width:70%;height:5px;border-radius:4px;background:#6f6278;margin:9px auto 0}
-body.dark-mode .gallery-card .slot.sehatna-preview{background:linear-gradient(135deg,#2a2231,#30202b)}body.dark-mode .mini-browser,body.dark-mode .mini-kiosk .kiosk-head,body.dark-mode .mini-phone{background:#fdfbff}body.dark-mode .mini-top{background:#eee8f3}
-@media(max-width:560px){.mini-browser{width:76%;height:76%}.mini-kiosk{width:42%;height:88%}.mini-phone{width:31%;height:88%}.mini-watch{width:31%}}
-
-/* Clearer Sehatna interface thumbnails */
-.gallery-card .slot.sehatna-preview{background:linear-gradient(135deg,#eee8fa,#f6e2eb)}
-.website-preview .mini-browser:after{content:"HEALTH PORTAL";position:absolute;right:10px;top:8px;padding:4px 7px;border-radius:7px;background:#f0e8f7;color:#70518f;font:800 6px Manrope;letter-spacing:.08em}
-.pharmacy-preview .mini-kiosk:after{content:"PHARMACY";position:absolute;right:-13px;top:15px;padding:5px 7px;border-radius:7px;background:#fff;color:#70518f;font:800 6px Manrope;box-shadow:0 8px 15px rgba(61,43,86,.1)}
-.phone-preview:before{content:"MOBILE WIDGET";position:absolute;left:12px;top:12px;padding:5px 7px;border-radius:7px;background:rgba(255,255,255,.9);color:#70518f;font:800 6px Manrope;letter-spacing:.06em;z-index:2}
-.watch-preview:before{content:"SMARTWATCH";position:absolute;left:12px;top:12px;padding:5px 7px;border-radius:7px;background:rgba(255,255,255,.9);color:#70518f;font:800 6px Manrope;letter-spacing:.06em;z-index:2}
-body.dark-mode .website-preview .mini-browser:after,body.dark-mode .pharmacy-preview .mini-kiosk:after,body.dark-mode .phone-preview:before,body.dark-mode .watch-preview:before{background:#f1ebf6;color:#5f4a88}
+/* Sehatna interface cards — exact supplied screenshots, presented as portfolio mockups */
+.gallery-card.sehatna-mockup-card{
+  background:var(--surface);
+  border:1px solid rgba(154,132,188,.20);
+  box-shadow:0 18px 45px rgba(78,55,104,.08);
+  transition:transform .35s cubic-bezier(.2,.75,.2,1),box-shadow .35s,border-color .35s;
+}
+.gallery-card.sehatna-mockup-card:hover{
+  transform:translateY(-8px);
+  box-shadow:0 26px 58px rgba(78,55,104,.14);
+  border-color:rgba(154,132,188,.38);
+}
+.gallery-card.sehatna-mockup-card .slot.sehatna-preview{
+  height:250px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  position:relative;
+  overflow:hidden;
+  background:
+    radial-gradient(circle at 24% 26%,rgba(214,190,235,.58),transparent 34%),
+    radial-gradient(circle at 78% 76%,rgba(244,204,221,.50),transparent 33%),
+    linear-gradient(135deg,#f2ecfa 0%,#f8eef4 100%);
+}
+.gallery-card.sehatna-mockup-card .slot.sehatna-preview::before{
+  content:"";
+  position:absolute;
+  width:170px;height:170px;
+  border-radius:50%;
+  background:rgba(255,255,255,.30);
+  filter:blur(2px);
+  left:calc(50% - 85px);top:calc(50% - 85px);
+}
+.gallery-card.sehatna-mockup-card .slot.sehatna-preview::after{
+  content:"";
+  position:absolute;
+  inset:auto 14% 13px 14%;
+  height:34px;
+  border-radius:50%;
+  background:rgba(114,83,143,.10);
+  filter:blur(13px);
+  pointer-events:none;
+}
+.gallery-card.sehatna-mockup-card .slot.sehatna-preview img{
+  position:relative;
+  z-index:2;
+  display:block;
+  width:auto;
+  height:auto;
+  max-width:86%;
+  max-height:88%;
+  object-fit:contain;
+  border-radius:18px;
+  box-shadow:0 18px 34px rgba(53,37,72,.20);
+  transition:transform .4s cubic-bezier(.2,.75,.2,1),box-shadow .4s;
+}
+.gallery-card.sehatna-mockup-card:hover .slot.sehatna-preview img{
+  transform:translateY(-5px) scale(1.025);
+  box-shadow:0 24px 44px rgba(53,37,72,.24);
+}
+/* Give wide dashboard captures a laptop-like footprint and vertical captures a device-like footprint. */
+.gallery-card.sehatna-mockup-card:nth-child(1) .slot img,
+.gallery-card.sehatna-mockup-card:nth-child(2) .slot img{
+  max-width:92%;
+  max-height:82%;
+  border-radius:14px;
+}
+.gallery-card.sehatna-mockup-card:nth-child(3) .slot img,
+.gallery-card.sehatna-mockup-card:nth-child(4) .slot img{
+  max-width:54%;
+  max-height:96%;
+  border-radius:24px;
+}
+body.dark-mode .gallery-card.sehatna-mockup-card{
+  background:#1f1a22;
+  border-color:#3d3544;
+}
+body.dark-mode .gallery-card.sehatna-mockup-card .slot.sehatna-preview{
+  background:linear-gradient(135deg,#28212d,#302430);
+}
+@media(max-width:560px){
+  .gallery-card.sehatna-mockup-card .slot.sehatna-preview{height:235px}
+  .gallery-card.sehatna-mockup-card:nth-child(1) .slot img,
+  .gallery-card.sehatna-mockup-card:nth-child(2) .slot img{max-width:95%;max-height:82%}
+  .gallery-card.sehatna-mockup-card:nth-child(3) .slot img,
+  .gallery-card.sehatna-mockup-card:nth-child(4) .slot img{max-width:62%;max-height:96%}
+}
 
 /* Project-specific hero artwork */
 .case-hero{width:min(90%,900px);margin:38px auto 42px;padding:0;min-height:0;background:var(--surface);border:1px solid var(--line);box-shadow:0 18px 55px rgba(61,43,86,.08)}

@@ -48,17 +48,3 @@ const navObs=new IntersectionObserver(entries=>entries.forEach(entry=>{
  if(entry.isIntersecting){navAnchors.forEach(a=>a.classList.toggle('active',a.getAttribute('href')==='#'+entry.target.id));}
 }),{rootMargin:'-35% 0px -55% 0px',threshold:0});
 sections.forEach(s=>navObs.observe(s));
-
-
-// Project showcase micro-interaction: subtle pointer tilt + reset.
-if (matchMedia('(pointer:fine)').matches) {
- document.querySelectorAll('[data-project-tilt]').forEach(el=>{
-  el.addEventListener('pointermove', e=>{
-   const r=el.getBoundingClientRect();
-   const x=(e.clientX-r.left)/r.width-.5;
-   const y=(e.clientY-r.top)/r.height-.5;
-   el.style.transform=`perspective(1100px) rotateX(${(-y*2.2).toFixed(2)}deg) rotateY(${(x*2.2).toFixed(2)}deg) translateY(-4px)`;
-  });
-  el.addEventListener('pointerleave', ()=>{el.style.transform='';});
- });
-}
